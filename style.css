@@ -1,33 +1,52 @@
+
 @font-face {
-  font-family:women;
-  src: url(ZANGX.ttf);
+  font-family:ZAN ; 
+  src: url(https://sodsalehi.github.io/ZANGX.ttf);
   
 }
 
 @keyframes pjanim {
-  0%{
-    font-size: 14px;
-    color:blue;
-    }
-  100%
-  color:yellow;
+  0% {
+    color: red;
+    font-size: 200px;
+    font-variation-settings: 'wght' 0;
+  }
+  100% {
+    color: blue;
+    font-size: 800px;
+    font-variation-settings: 'wght' 200;
+  }
+  
 }
+
+@keyframes pjmove {
+  0%{
+    left: 0px;
+    }
+  100% {
+   left: 400px;
+}
+  
+}
+
 
 body {
   background-color:yellow;
   
 }
 h1 {
-  animation: 3s infinite pjanim;
+  animation: 8s infinite  alternate linear pjanim;
   color:red;
   font-size:100px;
-  font-family:women;
+  font-family:ZAN ;
   text-align: center;
-  font-variation-settings:
-    'wght' 800, 'wdth' 1000;
-  'wdth' 800;
+
 }
 h2 {
-  background-color: #ff0000;
+  font-size: 100px;
+    background-color: #ff0000;
   apacity: 0.5;
+  position: relative;
+  animation: pjmove 1s infinite alternate ease-in;
 }
+
