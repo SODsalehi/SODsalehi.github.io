@@ -1,0 +1,33 @@
+@font-face {
+  font-family:mutatar;
+  src: url(https://www.axis-praxis.org/fonts/webfonts/MutatorSans.ttf);
+  
+}
+
+@keyframes pjanim {
+  0%{
+    font-size: 14px;
+    color:blue;
+    }
+  100%
+  color:yellow;
+}
+
+body {
+  background-color:yellow;
+  
+}
+h1 {
+  animation: 3s infinite pjanim;
+  color:red;
+  font-size:100px;
+  font-family:mutatar;
+  text-align: center;
+  font-variation-settings:
+    'wght' 800, 'wdth' 1000;
+  'wdth' 800;
+}
+h2 {
+  background-color: #ff0000;
+  apacity: 0.5;
+}
